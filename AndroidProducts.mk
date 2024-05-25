@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_avicii.mk
+    $(LOCAL_DIR)/infinity_avicii.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_avicii-eng \
-    lineage_avicii-user \
-    lineage_avicii-userdebug
+    infinity_avicii-eng \
+    infinity_avicii-user \
+    infinity_avicii-userdebug
