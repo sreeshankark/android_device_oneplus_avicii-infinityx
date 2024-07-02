@@ -1,0 +1,9 @@
+java_library {
+    name: "framework-oplus",
+    installable: true,
+
+    srcs: [
+        "src/**/*.aidl",
+        "src/**/*.java",
+    ],
+}

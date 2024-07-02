@@ -2,9 +2,27 @@
 persist.sys.oplus.autotest.monkeyRunning    u:object_r:exported_system_prop:s0
 
 # Camera
-oplus.camera.                    u:object_r:exported_system_prop:s0
-oppo.camera.                     u:object_r:exported_system_prop:s0
-persist.sys.camera.lao.enable    u:object_r:exported_system_prop:s0
+NA                                     u:object_r:exported_system_prop:s0
+oplus.camera.                          u:object_r:exported_system_prop:s0
+oppo.camera.                           u:object_r:exported_system_prop:s0
+persist.camera.                        u:object_r:exported_system_prop:s0
+persist.sys.camera.lao.enable          u:object_r:exported_system_prop:s0
+persist.vendor.aps.debug.framenum      u:object_r:exported_system_prop:s0
+persist.vendor.apsSN.algo.enable       u:object_r:exported_system_prop:s0
+persist.vendor.arcsoft.sn.dumprawinfo  u:object_r:exported_system_prop:s0
+persist.vendor.facebeauty.dump         u:object_r:exported_system_prop:s0
+persist.vendor.supernight.dump         u:object_r:exported_system_prop:s0
+ro.camera.                             u:object_r:exported_system_prop:s0
+ro.oplus.                              u:object_r:exported_system_prop:s0
+ro.oppo.                               u:object_r:exported_system_prop:s0
+ro.vendor.gfx.32bit.target             u:object_r:exported_system_prop:s0
+ro.vendor.oplus.                       u:object_r:exported_system_prop:s0
+vendor.arcsoft.                        u:object_r:exported_system_prop:s0
+vendor.boot.project_name               u:object_r:exported_system_prop:s0
+vendor.camera.                         u:object_r:exported_system_prop:s0
+vendor.oplus.                          u:object_r:exported_system_prop:s0
+vendor.oppo.                           u:object_r:exported_system_prop:s0
+vendor.runtime.fastcv.log              u:object_r:exported_system_prop:s0
 
 # Display
 persist.sys.display.iris.absent    u:object_r:system_oplus_iris_prop:s0
@@ -19,14 +37,13 @@ oplus.goodix.fp       u:object_r:system_fingerprint_prop:s0
 oplus.optical.        u:object_r:system_fingerprint_prop:s0
 
 # Logging
+persist.al.cfr.loglevel             u:object_r:exported_system_prop:s0
 persist.camera.assert.panic         u:object_r:exported_system_prop:s0
 persist.camera.OverrideLogLevels    u:object_r:exported_system_prop:s0
 persist.sys.assert.panic            u:object_r:exported_system_prop:s0
 persist.sys.camera.log.scene        u:object_r:exported_system_prop:s0
 persist.sys.debuglog.config         u:object_r:exported_system_prop:s0
-persist.sys.log.ae                  u:object_r:exported_system_prop:s0
-persist.sys.log.af                  u:object_r:exported_system_prop:s0
-persist.sys.log.awb                 u:object_r:exported_system_prop:s0
+persist.sys.log.                    u:object_r:exported_system_prop:s0
 
 # Modem
 persist.sys.enable_modem_dump    u:object_r:exported_system_prop:s0
