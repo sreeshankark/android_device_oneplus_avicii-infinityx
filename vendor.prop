@@ -124,6 +124,9 @@ vendor.qcom.bluetooth.soc=cherokee
 # Bluetooth Name
 bluetooth.device.default_name=OnePlus Nord
 
+# Camera
+vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
+
 # Chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7250
