@@ -45,7 +45,7 @@
     <bool name="config_hasWarpCharger">true</bool>
 
     <!-- Path to warp charging status file -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/oplus_chg/battery/voocchg_ing</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/virtual/oplus_chg/battery/voocchg_ing</string>
 
     <!-- The list of package IDs that are not allowed to use aux cameras. -->
     <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
