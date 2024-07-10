@@ -14,9 +14,6 @@ $(call inherit-product, device/oneplus/avicii/device.mk)
 # Inherit some common Infinity-X stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# Call the BCR setup
-$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
-
 # Infinity-X Specific Flags
 INFINITY_BUILD_TYPE := OFFICIAL
 INFINITY_MAINTAINER := sreeshankark
