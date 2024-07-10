@@ -4,6 +4,18 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/qcom-caf/bootctrl",
+    ],
+}
+
+prebuilt_hidl_interfaces {
+    name: "hidl_oplus_cameraextension_interface",
+    interfaces: [
+        "vendor.oplus.hardware.cameraextension@1.0::ICameraExtensionService",
+    ],
 }
 
 install_symlink {

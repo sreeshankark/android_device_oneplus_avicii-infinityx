@@ -316,15 +316,14 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-$(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
-$(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
-
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-infinity
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
+    FrameworksResCommon \
+    FrameworksResGeneric \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
     OPlusFrameworksResTarget \
@@ -333,8 +332,13 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResCommon \
     OPlusSystemUIResTarget \
+    OPlusWifiResCommon \
+    SettingsProviderResGeneric \
+    SystemUIResCommon \
+    TelephonyResCommon \
+    WifiResCommon \
     WifiResTarget
-
+    
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -393,8 +397,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/oplus
+    $(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \

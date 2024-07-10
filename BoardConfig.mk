@@ -80,7 +80,7 @@ TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oplus
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
@@ -168,7 +168,7 @@ VENDOR_SECURITY_PATCH := 2023-12-05
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include hardware/oplus/sepolicy/qti/SEPolicy.mk
+include device/oneplus/avicii/sepolicy/qti/SEPolicy.mk
 
 # Touch
 SOONG_CONFIG_NAMESPACES += OPLUS_LINEAGE_TOUCH_HAL
