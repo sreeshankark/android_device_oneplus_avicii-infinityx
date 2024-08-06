@@ -57,6 +57,8 @@ blob_fixups: blob_fixups_user_type = {
         .patch_file('blob-patches/manifest_oplus_fingerprint.patch'),
     ('odm/lib64/mediadrm/libwvdrmengine.so', 'odm/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
+    'product/app/PowerOffAlarm/PowerOffAlarm.apk': blob_fixup()
+        .apktool_patch('blob-patches/PowerOffAlarm.patch', '-s'),
     'product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml': blob_fixup()
         .regex_replace('/my_product', '/product'),
     'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
