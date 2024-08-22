@@ -327,6 +327,9 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# oplus-fwk
+$(call inherit-product, device/oneplus/avicii/oplus-fwk/oplus-fwk.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-infinity
@@ -437,7 +440,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
-    
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oplus
