@@ -8,6 +8,11 @@ from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
 )
+from extract_utils.fixups_lib import (
+    lib_fixup_remove,
+    lib_fixups,
+    lib_fixups_user_type,
+)
 from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
@@ -30,8 +35,7 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 
 
 lib_fixups: lib_fixups_user_type = {
-    libs_clang_rt_ubsan: lib_fixup_remove_arch_suffix,
-    libs_proto_3_9_1: lib_fixup_vendorcompat,
+    **lib_fixups,
     (
         'com.qti.stats.pdlib',
         'com.qualcomm.qti.dpm.api@1.0',
