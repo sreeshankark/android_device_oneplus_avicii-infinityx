@@ -481,7 +481,7 @@ vendor/etc/Oppo_QC_LTM_Commercial_SM7225_2021_01_08.pfm
 vendor/lib64/libhdr_tm.so
 
 # Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libhistogram.so;MAKE_COPY_RULE;MODULE_SUFFIX=_vendor
 vendor/lib64/libqdutils.so
