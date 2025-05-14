@@ -153,7 +153,6 @@ PRODUCT_PACKAGES += \
     libsdmcore \
     libsdmutils \
     libutilscallstack.vendor \
-    libvulkan \
     vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
