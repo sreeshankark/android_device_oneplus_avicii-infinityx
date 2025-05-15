@@ -48,6 +48,7 @@ lib_fixups: lib_fixups_user_type = {
         'libmmosal',
         'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.imsrtpservice@3.0',
+        'libstdc++',
     ): lib_fixup_vendor_suffix,
 }
 
