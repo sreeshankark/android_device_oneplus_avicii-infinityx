@@ -861,6 +861,17 @@ vendor/etc/media_profiles_vendor.xml
 vendor/etc/system_properties.xml
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
+# Media (Codec2) from OnePlus 8T (KB2005_14.0.0.603(EX01))
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
+vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|3c396a276dfb589501105e7158459fa2d644607e 
+vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
+vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
+vendor/lib/libqcodec2_basecodec.so|a517b6a89bf54d58c46758621c6dce9056cb92f7
+vendor/lib/libqcodec2_core.so|b92991b36af312411eb4779fea1a5c22550c1d56
+vendor/lib/libqcodec2_platform.so|fccd9c509fbfda6a72299d90d8d680885a1238ec
+vendor/lib/libqcodec2_utils.so|48a75460f05e2fdb7260e2ab69181fd71515dbb5
+vendor/lib/libqcodec2_v4l2codec.so|3047f7689ee4d35b079ae678b1ff9c90ed899449
+
 # Native public libraries
 vendor/etc/public.libraries.txt
 
