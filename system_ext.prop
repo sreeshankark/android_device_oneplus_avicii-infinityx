@@ -19,6 +19,9 @@ persist.camera.privapp.list=com.oneplus.camera
 persist.vendor.camera.privapp.list=com.oneplus.camera
 ro.oplus.version.base=1.21.7250.2023122816073522520246
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # DPM
 persist.vendor.dpm.feature=9
 
