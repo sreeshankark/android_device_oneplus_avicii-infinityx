@@ -16,7 +16,6 @@ $(call inherit-product, device/oneplus/avicii/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := OFFICIAL
 INFINITY_MAINTAINER := sreeshankark
 TARGET_BOOT_ANIMATION_RES := 1080
 ifeq ($(WITH_GAPPS), true)

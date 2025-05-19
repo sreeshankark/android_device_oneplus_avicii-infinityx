@@ -29,4 +29,4 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/oneplus/avicii/sepolicy/qti/public/common-um
 endif
 
-include device/infinity/sepolicy/libperfmgr/sepolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk

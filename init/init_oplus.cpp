@@ -58,4 +58,9 @@ void vendor_load_properties() {
     
     // Infinity-X Properties
     OverrideProperty("ro.infinity.maintainer", "Sreeshankar K");
+    OverrideProperty("ro.infinity.soc", "Snapdragon 765G 5G");
+    OverrideProperty("ro.infinity.battery", "4115 mAh");
+    OverrideProperty("ro.infinity.display", "1080 x 2400, 90Hz");
+    OverrideProperty("ro.infinity.camera", "48MP + 8MP + 5MP + 2MP");
+    OverrideProperty("ro.product.marketname", "OnePlus Nord");
 }
