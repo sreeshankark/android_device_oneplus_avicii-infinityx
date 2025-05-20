@@ -13,23 +13,30 @@ N="\033[0m"; # No Color
 SRC_DIR="${PWD}";
 CLANG_VERSION="r547379";
 CLANG_DIR="${SRC_DIR}/prebuilts/clang/host/linux-x86/clang-${CLANG_VERSION}";
+FW_DIR="${SRC_DIR}/vendor/oneplus/firmware";
 KERNEL_DIR="${SRC_DIR}/kernel/oneplus/avicii";
 VENDOR_DIR="${SRC_DIR}/vendor/oneplus/avicii";
 APPS_DIR="${SRC_DIR}/vendor/oneplus/apps";
 CLANG_TAR="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-${CLANG_VERSION}.tar.gz";
+FW_REPO="https://bitbucket.org/sreeshankark/android_vendor_oneplus_firmware";
 KERNEL_REPO="https://github.com/sreeshankark/android_kernel_oneplus_avicii";
 VENDOR_REPO="https://bitbucket.org/sreeshankark/android_vendor_oneplus_avicii";
 APPS_REPO="https://bitbucket.org/sreeshankark/android_vendor_oneplus_apps";
 
 # Dependencies
-DEPENDENCIES=( "KERNEL" "VENDOR" "APPS" );
+DEPENDENCIES=( "FW" "KERNEL" "VENDOR" "APPS" );
 
 # Check if the dependency is available in the correct path
 function chk_dependencies() {
 echo -e "${B}Checking Dependencies...${N}";
 for DEPENDENCY in "${DEPENDENCIES[@]}"
 do
-	if [ ${DEPENDENCY} = "KERNEL" ];
+	if [ ${DEPENDENCY} = "FW" ];
+	then	
+		DIR="${FW_DIR}";
+		REPO="${FW_REPO}";
+		NAME="Firmware Images";
+	elif [ ${DEPENDENCY} = "KERNEL" ];
 	then	
 		DIR="${KERNEL_DIR}";
 		REPO="${KERNEL_REPO}";
