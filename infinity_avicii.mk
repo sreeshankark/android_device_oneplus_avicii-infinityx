@@ -28,12 +28,10 @@ PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := AC2003
 
-PRODUCT_SYSTEM_NAME := Nord
-PRODUCT_SYSTEM_DEVICE := avicii
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
-    TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
-
+    DeviceName=Nord \
+    DeviceProduct=avicii \
+    SystemName=Nord \
+    SystemDevice=avicii
