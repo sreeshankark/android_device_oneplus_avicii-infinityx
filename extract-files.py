@@ -127,6 +127,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_open')
         .clear_symbol_version('remote_register_buf_attr')
         .clear_symbol_version('remote_register_buf'),
+    'vendor/lib64/libaps_frame_registration.so': blob_fixup()
+	.replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/sensors.ssc.so': blob_fixup()
         .binary_regex_replace(b'qti.sensor.wise_light', b'android.sensor.light\x00')
         .sig_replace('F1 E9 D3 84 52 49 3F A0 72', 'F1 A9 00 80 52 09 00 A0 72'),

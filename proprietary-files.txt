@@ -153,7 +153,6 @@ odm/etc/camera/video_beauty_default_config
 odm/lib64/libSonyIMX471RmscLibrary.so
 odm/lib64/libarcsoft_supervideostabilization.so
 odm/lib64/libormshalclient.so
-odm/lib64/libstdc++.so
 odm/lib64/libvl53l1_daemon.so
 odm/lib64/sensors.hal.tof.so
 vendor/bin/hw/vendor.oplus.hardware.cameraMDM@1.0-service
@@ -276,7 +275,7 @@ vendor/lib64/libVDBlurless.so
 vendor/lib64/libVDDualCameraBlurlessAPI.so
 vendor/lib64/libVDFusionBlurlessAPI_v2.so
 vendor/lib64/libVDSuperPhotoAPI.so
-vendor/lib64/libaps_frame_registration.so
+vendor/lib64/libaps_frame_registration.so;DISABLE_CHECKELF
 vendor/lib64/libapsdarksight.so
 vendor/lib64/libapsexif.so
 vendor/lib64/libapsjpeg.so
