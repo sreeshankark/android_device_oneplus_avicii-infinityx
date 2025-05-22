@@ -128,7 +128,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
 my_product/lib64/libsingle_camera_bokeh_native.so:system_ext/lib64/libsingle_camera_bokeh_native.so
-my_product/lib64/libApsFaceBeautyPreviewProductJni.so:system_ext/lib64/libApsFaceBeautyPreviewProductJni.so
+my_product/lib64/libApsFaceBeautyPreviewProductJni.so:system_ext/lib64/libApsFaceBeautyPreviewProductJni.so;FIX_SONAME
 my_product/lib64/libAPSClient-cmd-jni.so:system_ext/lib64/libAPSClient-cmd-jni.so
 my_product/lib64/libFileExtender-jni.so:system_ext/lib64/libFileExtender-jni.so
 my_product/lib64/libOplusBlurPreviewJNI.so:system_ext/lib64/libOplusBlurPreviewJNI.so
@@ -262,8 +262,8 @@ vendor/lib64/lib_oneplus_transparenteffect.so
 vendor/lib64/lib_oneplus_watermark.so
 vendor/lib64/libAlgoProcess.so
 vendor/lib64/libFaceBeautyLiteCap.so
-vendor/lib64/libOPPO_Front_SCPortrait.so
-vendor/lib64/libOPPO_SCPortrait.so
+vendor/lib64/libOPPO_Front_SCPortrait.so;FIX_SONAME
+vendor/lib64/libOPPO_SCPortrait.so;FIX_SONAME
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libPolarrRender.so
 vendor/lib64/libSNPE.so
@@ -273,10 +273,10 @@ vendor/lib64/libSuperSensorProcessor.so
 vendor/lib64/libSuperSensorProcessorCWrapper.so
 vendor/lib64/libVDBlurless.so
 vendor/lib64/libVDDualCameraBlurlessAPI.so
-vendor/lib64/libVDFusionBlurlessAPI_v2.so
+vendor/lib64/libVDFusionBlurlessAPI_v2.so;FIX_SONAME
 vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libaps_frame_registration.so;DISABLE_CHECKELF
-vendor/lib64/libapsdarksight.so
+vendor/lib64/libapsdarksight.so;FIX_SONAME
 vendor/lib64/libapsexif.so
 vendor/lib64/libapsjpeg.so
 vendor/lib64/libarcsoft_beautyshot.so
