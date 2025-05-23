@@ -135,6 +135,8 @@ my_product/lib64/libOplusBlurPreviewJNI.so:system_ext/lib64/libOplusBlurPreviewJ
 my_product/lib64/libAncHumanDoubleExposure-jni.so:system_ext/lib64/libAncHumanDoubleExposure-jni.so
 my_product/lib64/libAPSClient-jni.so:system_ext/lib64/libAPSClient-jni.so
 my_product/lib64/libextendfile.so:system_ext/lib64/libextendfile.so
+my_product/priv-app/OnePlusCamera/lib/arm64/libsnpe_dsp_v66_domains_v2_skel.so:system_ext/lib64/libsnpe_dsp_v66_domains_v2_skel.so;SYMLINK=system_ext/priv-app/OnePlusCamera/lib/arm64/libsnpe_dsp_v66_domains_v2_skel.so
+my_product/priv-app/OnePlusCameraService/lib/arm64/libCameraMDMHelper.so:system/lib64/libCameraMDMHelper.so;SYMLINK=system/priv-app/OnePlusCameraService/lib/arm64/libCameraMDMHelper.so
 odm/bin/vl53l1_daemon_main
 odm/etc/camera/calibrationCfg.xml
 odm/etc/camera/camera_engmode.xml
